@@ -1,0 +1,128 @@
+ @import url(./variable.css); 
+ @import url(./reset.css);
+ 
+ 
+ header, nav { background: var(--rich-black-fogra-29); }
+ 
+ .action,
+ .navbar{
+   padding: 20px var(--px);
+ }
+ 
+ .container {
+   max-width: 1440px;
+   margin: auto;
+ }
+ 
+ 
+ .navbar {
+   height: 100px;
+   display:         flex;
+   justify-content: space-between;
+   align-items:     center;
+ }
+ 
+ 
+ nav { margin-right: 750px; }
+ 
+ .navbar-nav { display: flex; }
+ 
+ .navbar-nav li:not(:last-child) { margin-right: 60px; }
+ 
+ .navbar-link {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-5);
+ }
+
+ .navbar-link:hover { color: var(--light-azure); }
+
+
+
+.action { margin-bottom: 100px; }
+
+.action-grid {
+  display: flex;
+  gap: 170px;
+  margin-bottom: 50px;
+ }
+
+ .title:hover{ color: var(--light-azure);}
+ 
+.action-card {
+  
+  --scale: 0.8;
+  cursor: pointer;
+}
+
+.action-card .card-action {
+  position: absolute;
+  height: 200px;
+  border-radius: 15px;
+  margin-left: 15px;
+  overflow: hidden;
+}
+.action-card:hover .card-img { transform: scale(1.1); }
+
+
+.info-action {
+  display: grid;
+  font-size: var(--fs-x-sm);
+  font-weight: var(--fw-5);
+  line-height: 25px;
+}
+ 
+.title {
+	font-size: 19px;} 
+ 
+ 
+ footer {
+   background: var(--rich-black-fogra-30);
+   padding: 80px var(--px) 40px;
+ }
+ 
+ .footer-content {
+   display:         flex;
+   justify-content: space-between;
+   align-items:     flex-start;
+   border-bottom: 1px solid var(--oxford-blue-50);
+   padding-bottom: 80px;
+ }
+ 
+ .footer-brand {
+   max-width: 250px;
+   margin-right: 130px;
+ }
+ 
+ .footer-logo {
+   width: 100px;
+   margin-bottom: 30px;
+ }
+ 
+ .slogan {
+   font-size: var(--fs-sm);
+   line-height: 20px;
+   margin-bottom: 20px;
+ }
+
+ .social-link a { display: inline-block; }
+
+ .social-link ion-icon {
+   font-size: 25px;
+   margin-right: 20px;
+ }
+ 
+ .footer-copyright {
+   display:         flex;
+   justify-content: space-between;
+   align-items:     center;
+   padding-top: 40px;
+ }
+ 
+ .footer-copyright p,
+ .wrapper a { font-size: var(--fs-sm); }
+ 
+ .wrapper a:hover { color: var(--light-azure); }
+ 
+ .wrapper { display: flex; }
+ 
+ .wrapper a:not(:last-child) { margin-right: 30px; }
